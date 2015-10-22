@@ -151,4 +151,30 @@ h1, h2, h3, h4, b {
     text-transform: uppercase;
     height: 50px;
     width: 100%;
+    padding: 15px 40px;
+}
+
+/******** SCAN PAGE ********/
+
+.scan__page-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.scan-NRIC {
+    margin: 15px;
+    font-size: 1.4em;
+    color: #777777;
+}
+
+.scan-box__section {
+    padding: 40px;
+}
+
+.scan-box {
+    background-color: #eee;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 3em;
 }

@@ -7,7 +7,11 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Flag Day Check In'});
+  res.render('index', { title: 'Check In'});
+});
+
+app.get('/scan', function (req, res) {
+  res.render('scan', { title: 'Scan Tin'});
 });
 
 app.listen(app.get('port'), function() {

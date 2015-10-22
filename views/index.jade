@@ -1,11 +1,6 @@
-html
-  head
-    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', rel='stylesheet')
-    link(rel='stylesheet', href='styles/pure.min.css', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='styles/main.css', type='text/css')
-    title!= title
-  body
+extends layout
+
+block content
     div.pure-g.nav
         div.pure-u-1-5
             h1.title Volunteers
@@ -33,7 +28,7 @@ html
                     div.pure-u-1-5.row__title Address
                     div.pure-u-4-5 20 Standard Street, Bugis 12345
             div.tin__add-new
-                button.pure-button.button-success Assign new tin
+                a.pure-button.button-success(href='/scan') Assign new tin
             div.tin__section-title
                 h3 Current Tin
             div.tin__section.-first
