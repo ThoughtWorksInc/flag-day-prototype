@@ -27,7 +27,13 @@ block content
                         .tin__info-row.tin__time
                             span.tin__time-title.row__title Time out 
                             span 3:25PM
+                        .tin__info-row.tin__time
+                            span.tin__time-title.row__title Time in 
+                            span --
         .tin-terms
             | By clicking agree, I take ownership of Tin #11113
-        div
-            a.pure-button.button-large.button-success(href='#') Accept tin
+        .scan-buttons
+            div
+                a.pure-button.button-large.button-success(href='/') Accept tin
+            div
+                a.pure-button.button-large.button-error(href='/') Exit

@@ -22,6 +22,18 @@ h1, h2, h3, h4, b {
     border: 1px solid #19A93B;
 }
 
+.button-error {
+    background-color: rgb(202, 60, 60);
+    color: #fff;
+    border: 1px solid rgb(202, 60, 60);
+}
+
+.button-secondary {
+    background-color: rgb(66, 184, 221);
+    color: #fff;
+    border: 1px solid rgb(66, 184, 221);
+}
+
 .button-large {
     text-transform: uppercase;
     height: 50px;
@@ -83,8 +95,21 @@ h1, h2, h3, h4, b {
 /******** VOLUNTEER SIDEBAR ********/
 
 .volunteer__sidebar {
-/*    background: #FEF7E0;
-*/}
+    width: 33.3333%;
+    position: relative;
+}
+
+.volunteer__sidebar-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.volunteer__sidebar-close i {
+    font-size: 1.5em;
+    color: #999999;
+    cursor: pointer;
+}
 
 .volunteer__info {
     padding: 15px;
@@ -210,6 +235,6 @@ h1, h2, h3, h4, b {
     font-weight: 300;
 }
 
-.checkout-buttons .pure-button {
+.scan-buttons .pure-button {
     margin-bottom: 15px;
 }

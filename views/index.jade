@@ -11,9 +11,11 @@ block content
         .pure-u-1-5.nav__add-new
             a.pure-button.pure-button-primary(href='#') Add new 
     .pure-g.content
-        .pure-u-2-3
+        .pure-u-1.volunteer__table-container
             include _volunteer-table.jade
         .pure-u-1-3.volunteer__sidebar
+            .volunteer__sidebar-close
+                i.fa.fa-times-circle
             .volunteer__info
                 .pure-g.volunteer__info-row
                     .pure-u-1-5.row__title Name
@@ -29,6 +31,7 @@ block content
                     .pure-u-4-5 20 Standard Street, Bugis 12345
             div
                 a.button-large.pure-button.button-success(href='/checkout-tin') Assign new tin
+                a.button-large.pure-button.button-secondary(href='/checkin-tin') Return Tin
             .tin__section-title
                 h3 Current Tin
             .tin__section.-first
@@ -44,8 +47,9 @@ block content
                             .tin__info-row.tin__time
                                 span.tin__time-title.row__title Time out 
                                 span 3:25PM
-                            .tin__info-row.-last
-                                a.pure-button.tin__button.button-success(href='/checkin-tin') Return Tin
+                            .tin__info-row.tin__time
+                                span.tin__time-title.row__title Time in 
+                                span --
             .tin__section-title
                 h3 Tin History
             .tin__section.-first
@@ -64,23 +68,5 @@ block content
                            .tin__info-row.tin__time
                                span.tin__time-title.row__title Time in 
                                span 3:15PM
-            .tin__section
-                .pure-g
-                    .pure-u-2-5
-                        .tin__title-section 
-                            .tin__number 
-                                span.pure-button.label #11111
-                            .tin__status.returned
-                                span.pure-button.label Returned
-                    .pure-u-3-5
-                        .tin__info-section
-                            .tin__info-row.tin__time
-                                span.tin__time-title.row__title Time out 
-                                span 12:30PM
-                           .tin__info-row.tin__time
-                               span.tin__time-title.row__title Time in 
-                               span 3:15PM
 
-
-
-
+    script(src="/scripts/main.js")
