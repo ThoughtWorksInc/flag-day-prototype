@@ -1,7 +1,7 @@
 html
   head
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', rel='stylesheet')
-    link(href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css', rel='stylesheet')
+    link(rel='stylesheet', href='styles/pure.min.css', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='styles/main.css', type='text/css')
     title!= title
@@ -32,6 +32,8 @@ html
                 div.pure-g.volunteer__info-row
                     div.pure-u-1-5.row__title Address
                     div.pure-u-4-5 20 Standard Street, Bugis 12345
+            div.tin__add-new
+                button.pure-button.button-success Assign new tin
             div.tin__section-title
                 h3 Current Tin
             div.tin__section.-first
@@ -45,7 +47,7 @@ html
                     div.pure-u-3-5
                         div.tin__info-section
                             div.tin__info-row.tin__time
-                                span.tin__time-title.row__title Check out 
+                                span.tin__time-title.row__title Time out 
                                 span 3:25PM
                             div.tin__info-row.-last
                                 button.pure-button.tin__button.button-success Return Tin
@@ -62,10 +64,10 @@ html
                     div.pure-u-3-5
                         div.tin__info-section
                             div.tin__info-row.tin__time
-                                span.tin__time-title.row__title Check out 
+                                span.tin__time-title.row__title Time out 
                                 span 12:30PM
                            div.tin__info-row.tin__time
-                               span.tin__time-title.row__title Check in 
+                               span.tin__time-title.row__title Time in 
                                span 3:15PM
             div.tin__section
                 div.pure-g
@@ -78,13 +80,11 @@ html
                     div.pure-u-3-5
                         div.tin__info-section
                             div.tin__info-row.tin__time
-                                span.tin__time-title.row__title Check out 
+                                span.tin__time-title.row__title Time out 
                                 span 12:30PM
                            div.tin__info-row.tin__time
-                               span.tin__time-title.row__title Check in 
+                               span.tin__time-title.row__title Time in 
                                span 3:15PM
-            //- div.tin__add-new
-            //-     button.pure-button.button-success Add Tin
 
 
 

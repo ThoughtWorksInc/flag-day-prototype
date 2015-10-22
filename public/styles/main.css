@@ -146,3 +146,9 @@ h1, h2, h3, h4, b {
 .tin__info-row .tin__button {
     width: 100%;
 }
+
+.tin__add-new .button-success {
+    text-transform: uppercase;
+    height: 50px;
+    width: 100%;
+}
