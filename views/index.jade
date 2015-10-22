@@ -1,125 +1,91 @@
 html
   head
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', rel='stylesheet')
     link(href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='styles/main.css', type='text/css')
     title!= title
   body
-    div.content
-        div.pure-g.nav
-            div.pure-u-1-5
-                h1.title Check in
-            div.pure-u-3-5
-                form.pure-form
-                    fieldset
-                        input(type='text', placeholder='Search volunteer')
-            div.pure-u-1-5
-                a.pure-button.pure-button-primary(href='#') Add new 
-        div.pure-g
-            div.pure-u-1
-                table.pure-table
-                    thead
-                        tr
-                            th Name
-                            th NRIC
-                            th Station
-                            th Tin
-                    tbody
-                        tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                        tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                        tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                        tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
-                       tr
-                            td John Smith
-                            td 123456789
-                            td Orchard
-                            td Yes
+    div.pure-g.nav
+        div.pure-u-1-5
+            h1.title Volunteers
+        div.pure-u-3-5
+            form.pure-form
+                fieldset
+                    input(type='text', placeholder='Search volunteer')
+        div.pure-u-1-5.nav__add-new
+            a.pure-button.pure-button-primary(href='#') Add new 
+    div.pure-g.content
+        div.pure-u-2-3
+            include _volunteer-table.jade
+        div.pure-u-1-3.volunteer__sidebar
+            div.volunteer__info
+                div.pure-g.volunteer__info-row
+                    div.pure-u-1-5.row__title Name
+                    div.pure-u-4-5 Elvin Tan
+                div.pure-g.volunteer__info-row
+                    div.pure-u-1-5.row__title NRIC
+                    div.pure-u-4-5 123456789
+                div.pure-g.volunteer__info-row
+                    div.pure-u-1-5.row__title Phone
+                    div.pure-u-4-5 123456789
+                div.pure-g.volunteer__info-row
+                    div.pure-u-1-5.row__title Address
+                    div.pure-u-4-5 20 Standard Street, Bugis 12345
+            div.tin__section-title
+                h3 Current Tin
+            div.tin__section.-first
+                div.pure-g
+                    div.pure-u-2-5
+                        div.tin__title-section 
+                            div.tin__number 
+                                span.pure-button.label #11113
+                            div.tin__status.assigned
+                                span.pure-button.label Assigned
+                    div.pure-u-3-5
+                        div.tin__info-section
+                            div.tin__info-row.tin__time
+                                span.tin__time-title.row__title Check out 
+                                span 3:25PM
+                            div.tin__info-row.-last
+                                button.pure-button.tin__button.button-success Return Tin
+            div.tin__section-title
+                h3 Tin History
+            div.tin__section.-first
+                div.pure-g
+                    div.pure-u-2-5
+                        div.tin__title-section 
+                            div.tin__number 
+                                span.pure-button.label #11112
+                            div.tin__status.returned
+                                span.pure-button.label Returned
+                    div.pure-u-3-5
+                        div.tin__info-section
+                            div.tin__info-row.tin__time
+                                span.tin__time-title.row__title Check out 
+                                span 12:30PM
+                           div.tin__info-row.tin__time
+                               span.tin__time-title.row__title Check in 
+                               span 3:15PM
+            div.tin__section
+                div.pure-g
+                    div.pure-u-2-5
+                        div.tin__title-section 
+                            div.tin__number 
+                                span.pure-button.label #11111
+                            div.tin__status.returned
+                                span.pure-button.label Returned
+                    div.pure-u-3-5
+                        div.tin__info-section
+                            div.tin__info-row.tin__time
+                                span.tin__time-title.row__title Check out 
+                                span 12:30PM
+                           div.tin__info-row.tin__time
+                               span.tin__time-title.row__title Check in 
+                               span 3:15PM
+            //- div.tin__add-new
+            //-     button.pure-button.button-success Add Tin
+
+
+
+

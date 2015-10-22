@@ -1,0 +1,148 @@
+body, html, button, input, select, textarea, 
+.pure-g [class *= "pure-u"] {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, b {
+    font-weight: 700;
+    margin: 0;
+}
+
+.row__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 2px;
+    color: gray;
+}
+
+.button-success {
+    background-color: #19A93B;
+    color: #fff;
+    border: 1px solid #19A93B;
+}
+
+/******** VOLUNTEER NAVIGATION ********/
+
+.nav {
+    background-color: #eee;
+    padding: 10px;
+    height: 60px;
+}
+
+.nav .title {
+    margin: 10px;
+}
+
+.nav input {
+    height: 50px;
+    width: 100%;
+}
+
+.nav__add-new {
+    text-align: right;
+}
+
+.nav__add-new .pure-button {
+    margin: 5px;
+    height: 50px;
+    padding: 15px 40px;
+    width: auto;
+}
+
+/******** VOLUNTEER TABLE ********/
+
+.volunteer__table {
+    width: 100%;
+}
+
+.volunteer__table thead {
+    background-color: #aaa;
+    color: #fff;
+}
+
+.volunteer__table th, .volunteer__table td {
+    padding: 1em 1.5em;
+}
+
+.volunteer__table tbody tr {
+    cursor: pointer;
+}
+
+.volunteer__table tbody tr:hover, .volunteer__table tbody tr.selected {
+    background-color: #E6F2FD;
+}
+
+/******** VOLUNTEER SIDEBAR ********/
+
+.volunteer__sidebar {
+/*    background: #FEF7E0;
+*/}
+
+.volunteer__info {
+    padding: 15px;
+}
+
+.volunteer__info-row {
+    padding: 5px 0;
+}
+
+/******** TIN ELEMENTS ********/
+
+.tin__section {    
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.tin__section.-first {
+    border-top: 1px solid #ccc;
+}
+
+.tin__title-section {
+    padding-right: 20px;
+}
+
+.tin__section-title {
+    padding: 15px;
+}
+
+.tin__title-section .label {
+    cursor: default;
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.tin__title-section .label:hover {
+    background-image: none;
+}
+
+.tin__number .label {
+    cursor: default;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+
+.tin__status.assigned .label {
+    color: #19A93B;
+    border: 1px solid #19A93B;
+    background: transparent;
+    padding: 5px;
+}
+
+.tin__info-row {
+    padding-bottom: 10px;
+}
+
+.tin__info-row.-last {
+    padding-bottom: 0;
+}
+
+.tin__info-row .row__title {
+    margin-right: 10px;
+}
+
+.tin__info-row .tin__button {
+    width: 100%;
+}
