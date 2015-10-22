@@ -177,16 +177,16 @@ h1, h2, h3, h4, b {
 
 /******** SCAN PAGES ********/
 
+.scan__page {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .tin-terms {
     margin: 20px;
     font-weight: 300;
     font-size: 0.9em;
     text-align: center;
-}
-
-.scan__page-content {
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .scan-NRIC {
@@ -220,7 +220,7 @@ h1, h2, h3, h4, b {
     height: 100%;
     line-height: 360px;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.7em;
     color: #fff;
 }
 

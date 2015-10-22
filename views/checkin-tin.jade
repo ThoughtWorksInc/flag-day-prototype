@@ -6,38 +6,41 @@ block content
             h1.title Elvin Tan
         .pure-u-3-5
             .scan-NRIC NRIC# 123456789
-    .scan__page-content
+    .scan__page
         .pure-g.scan-box__section
             .pure-u-1
                 .scan-image
                     img(src='images/barcode.jpg') 
-                    .scan-image-title SCAN TIN
-        .tin__section-title
-            h3 Tin History
-        .tin__section.-first
-            .pure-g
-                .pure-u-2-5
-                    .tin__title-section 
-                        .tin__number 
-                            span.pure-button.label #11112
-                        .tin__status.returned
-                            span.pure-button.label Returned
-                .pure-u-3-5
-                    .tin__info-section
-                        .tin__info-row.tin__time
-                            span.tin__time-title.row__title Time out 
-                            span 12:30PM
-                       .tin__info-row.tin__time
-                           span.tin__time-title.row__title Time in 
-                           span 3:00PM
+                    .scan-image-title SCAN TO RETURN
+        .scan__content
+            .tin__section-title
+                h3 Tin History
+            .tin__section.-first
+                .pure-g
+                    .pure-u-2-5
+                        .tin__title-section 
+                            .tin__number 
+                                span.pure-button.label #11112
+                            .tin__status.returned
+                                span.pure-button.label Returned
+                    .pure-u-3-5
+                        .tin__info-section
+                            .tin__info-row.tin__time
+                                span.tin__time-title.row__title Time out 
+                                span 12:30PM
+                           .tin__info-row.tin__time
+                               span.tin__time-title.row__title Time in 
+                               span 3:00PM
 
-        .time-volunteered
-            span.time-volunteered-title Total time volunteered 
-            span 2.5 hours
-        .scan-buttons
-            div 
-                a.pure-button.button-large(href='/') Send certificate
-            div
-                a.pure-button.button-large.button-success(href='/checkout-tin') Assign new tin
-            div 
-                a.pure-button.button-large.button-error(href='/') Exit
+            .time-volunteered
+                span.time-volunteered-title Total time volunteered 
+                span 2.5 hours
+            .scan-buttons
+                div 
+                    a.pure-button.button-large(href='/') Send certificate
+                div
+                    a.pure-button.button-large.button-success(href='/checkout-tin?next=true') Assign new tin
+                div 
+                    a.pure-button.button-large.button-error(href='/?current=true') Exit
+
+    script(src="/scripts/checkin.js")
