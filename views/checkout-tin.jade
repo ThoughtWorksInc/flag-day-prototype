@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .pure-g.nav
+        .pure-u-2-5
+            h1.title Elvin Tan
+        .pure-u-3-5
+            .scan-NRIC NRIC# 123456789
+    .scan__page-content
+        .pure-g.scan-box__section
+            .pure-u-1
+                .scan-image
+                    img(src='images/barcode.jpg') 
+                    .scan-image-title SCAN TIN
+        .tin__section-title
+            h3 Scanned Tin
+        .tin__section.-first
+            .pure-g
+                .pure-u-2-5
+                    .tin__title-section 
+                        .tin__number 
+                            span.pure-button.label #11113
+                        .tin__status.assigned
+                            span.pure-button.label Assigned
+                .pure-u-3-5
+                    .tin__info-section
+                        .tin__info-row.tin__time
+                            span.tin__time-title.row__title Time out 
+                            span 3:25PM
+        .tin-terms
+            | By clicking agree, I take ownership of Tin #11113
+        div
+            a.pure-button.button-large.button-success(href='#') Accept tin

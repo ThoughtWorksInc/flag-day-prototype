@@ -150,7 +150,7 @@ h1, h2, h3, h4, b {
     margin-right: 10px;
 }
 
-/******** SCAN PAGE ********/
+/******** SCAN PAGES ********/
 
 .tin-terms {
     margin: 20px;
@@ -197,4 +197,19 @@ h1, h2, h3, h4, b {
     text-align: center;
     font-size: 3em;
     color: #fff;
+}
+
+.time-volunteered {
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.time-volunteered-title {
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+.checkout-buttons .pure-button {
+    margin-bottom: 15px;
 }

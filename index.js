@@ -10,8 +10,12 @@ app.get('/', function (req, res) {
   res.render('index', { title: 'Check In'});
 });
 
-app.get('/scan', function (req, res) {
-  res.render('scan', { title: 'Scan Tin'});
+app.get('/checkout-tin', function (req, res) {
+  res.render('checkout-tin', { title: 'Scan Tin'});
+});
+
+app.get('/checkin-tin', function (req, res) {
+  res.render('checkin-tin', { title: 'Scan Tin'});
 });
 
 app.listen(app.get('port'), function() {

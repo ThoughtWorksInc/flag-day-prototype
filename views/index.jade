@@ -1,83 +1,83 @@
 extends layout
 
 block content
-    div.pure-g.nav
-        div.pure-u-1-5
+    .pure-g.nav
+        .pure-u-1-5
             h1.title Volunteers
-        div.pure-u-3-5
+        .pure-u-3-5
             form.pure-form
                 fieldset
                     input(type='text', placeholder='Search volunteer')
-        div.pure-u-1-5.nav__add-new
+        .pure-u-1-5.nav__add-new
             a.pure-button.pure-button-primary(href='#') Add new 
-    div.pure-g.content
-        div.pure-u-2-3
+    .pure-g.content
+        .pure-u-2-3
             include _volunteer-table.jade
-        div.pure-u-1-3.volunteer__sidebar
-            div.volunteer__info
-                div.pure-g.volunteer__info-row
-                    div.pure-u-1-5.row__title Name
-                    div.pure-u-4-5 Elvin Tan
-                div.pure-g.volunteer__info-row
-                    div.pure-u-1-5.row__title NRIC
-                    div.pure-u-4-5 123456789
-                div.pure-g.volunteer__info-row
-                    div.pure-u-1-5.row__title Phone
-                    div.pure-u-4-5 123456789
-                div.pure-g.volunteer__info-row
-                    div.pure-u-1-5.row__title Address
-                    div.pure-u-4-5 20 Standard Street, Bugis 12345
+        .pure-u-1-3.volunteer__sidebar
+            .volunteer__info
+                .pure-g.volunteer__info-row
+                    .pure-u-1-5.row__title Name
+                    .pure-u-4-5 Elvin Tan
+                .pure-g.volunteer__info-row
+                    .pure-u-1-5.row__title NRIC
+                    .pure-u-4-5 123456789
+                .pure-g.volunteer__info-row
+                    .pure-u-1-5.row__title Phone
+                    .pure-u-4-5 123456789
+                .pure-g.volunteer__info-row
+                    .pure-u-1-5.row__title Address
+                    .pure-u-4-5 20 Standard Street, Bugis 12345
             div
-                a.button-large.pure-button.button-success(href='/scan') Assign new tin
-            div.tin__section-title
+                a.button-large.pure-button.button-success(href='/checkout-tin') Assign new tin
+            .tin__section-title
                 h3 Current Tin
-            div.tin__section.-first
-                div.pure-g
-                    div.pure-u-2-5
-                        div.tin__title-section 
-                            div.tin__number 
+            .tin__section.-first
+                .pure-g
+                    .pure-u-2-5
+                        .tin__title-section 
+                            .tin__number 
                                 span.pure-button.label #11113
-                            div.tin__status.assigned
+                            .tin__status.assigned
                                 span.pure-button.label Assigned
-                    div.pure-u-3-5
-                        div.tin__info-section
-                            div.tin__info-row.tin__time
+                    .pure-u-3-5
+                        .tin__info-section
+                            .tin__info-row.tin__time
                                 span.tin__time-title.row__title Time out 
                                 span 3:25PM
-                            div.tin__info-row.-last
-                                button.pure-button.tin__button.button-success Return Tin
-            div.tin__section-title
+                            .tin__info-row.-last
+                                a.pure-button.tin__button.button-success(href='/checkin-tin') Return Tin
+            .tin__section-title
                 h3 Tin History
-            div.tin__section.-first
-                div.pure-g
-                    div.pure-u-2-5
-                        div.tin__title-section 
-                            div.tin__number 
+            .tin__section.-first
+                .pure-g
+                    .pure-u-2-5
+                        .tin__title-section 
+                            .tin__number 
                                 span.pure-button.label #11112
-                            div.tin__status.returned
+                            .tin__status.returned
                                 span.pure-button.label Returned
-                    div.pure-u-3-5
-                        div.tin__info-section
-                            div.tin__info-row.tin__time
+                    .pure-u-3-5
+                        .tin__info-section
+                            .tin__info-row.tin__time
                                 span.tin__time-title.row__title Time out 
                                 span 12:30PM
-                           div.tin__info-row.tin__time
+                           .tin__info-row.tin__time
                                span.tin__time-title.row__title Time in 
                                span 3:15PM
-            div.tin__section
-                div.pure-g
-                    div.pure-u-2-5
-                        div.tin__title-section 
-                            div.tin__number 
+            .tin__section
+                .pure-g
+                    .pure-u-2-5
+                        .tin__title-section 
+                            .tin__number 
                                 span.pure-button.label #11111
-                            div.tin__status.returned
+                            .tin__status.returned
                                 span.pure-button.label Returned
-                    div.pure-u-3-5
-                        div.tin__info-section
-                            div.tin__info-row.tin__time
+                    .pure-u-3-5
+                        .tin__info-section
+                            .tin__info-row.tin__time
                                 span.tin__time-title.row__title Time out 
                                 span 12:30PM
-                           div.tin__info-row.tin__time
+                           .tin__info-row.tin__time
                                span.tin__time-title.row__title Time in 
                                span 3:15PM
 
