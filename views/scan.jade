@@ -9,7 +9,9 @@ block content
     div.scan__page-content
         div.pure-g.scan-box__section
             div.pure-u-1
-                div.scan-box SCAN TIN
+                div.scan-image
+                    img(src='images/barcode.jpg') 
+                    div.scan-image-title SCAN TIN
         div.tin__section-title
             h3 Scanned Tin
         div.tin__section.-first
@@ -25,3 +27,7 @@ block content
                         div.tin__info-row.tin__time
                             span.tin__time-title.row__title Time out 
                             span 3:25PM
+        div.tin-terms
+            | By clicking agree, I take ownership of Tin #11113
+        div
+            a.pure-button.button-large.button-success(href='#') Accept tin
