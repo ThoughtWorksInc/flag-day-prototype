@@ -1,0 +1,6 @@
+{
+  "name": "Flag Day Prototype",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/stephs829/flag-day-prototype",
+  "keywords": ["node", "express", "static"]
+}
