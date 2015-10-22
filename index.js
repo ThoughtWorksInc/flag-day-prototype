@@ -7,7 +7,10 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Check In'});
+  var current = req.param('current');
+  var history = req.param('history');
+
+  res.render('index', { title: 'Check In', current: current, history: history});
 });
 
 app.get('/checkout-tin', function (req, res) {

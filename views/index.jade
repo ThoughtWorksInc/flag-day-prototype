@@ -30,43 +30,47 @@ block content
                     .pure-u-1-5.row__title Address
                     .pure-u-4-5 20 Standard Street, Bugis 12345
             div
-                a.button-large.pure-button.button-success(href='/checkout-tin') Assign new tin
-                a.button-large.pure-button.button-secondary(href='/checkin-tin') Return Tin
-            .tin__section-title
-                h3 Current Tin
-            .tin__section.-first
-                .pure-g
-                    .pure-u-2-5
-                        .tin__title-section 
-                            .tin__number 
-                                span.pure-button.label #11113
-                            .tin__status.assigned
-                                span.pure-button.label Assigned
-                    .pure-u-3-5
-                        .tin__info-section
-                            .tin__info-row.tin__time
-                                span.tin__time-title.row__title Time out 
-                                span 3:25PM
-                            .tin__info-row.tin__time
-                                span.tin__time-title.row__title Time in 
-                                span --
-            .tin__section-title
-                h3 Tin History
-            .tin__section.-first
-                .pure-g
-                    .pure-u-2-5
-                        .tin__title-section 
-                            .tin__number 
-                                span.pure-button.label #11112
-                            .tin__status.returned
-                                span.pure-button.label Returned
-                    .pure-u-3-5
-                        .tin__info-section
-                            .tin__info-row.tin__time
-                                span.tin__time-title.row__title Time out 
-                                span 12:30PM
-                           .tin__info-row.tin__time
-                               span.tin__time-title.row__title Time in 
-                               span 3:15PM
+                unless current == "true"
+                    a.button-large.pure-button.button-success(href='/checkout-tin') Assign new tin
+                if current == "true"
+                    a.button-large.pure-button.button-secondary(href='/checkin-tin') Return Tin
+            if current == "true"
+                .tin__section-title
+                    h3 Current Tin
+                .tin__section.-first
+                    .pure-g
+                        .pure-u-2-5
+                            .tin__title-section 
+                                .tin__number 
+                                    span.pure-button.label #11113
+                                .tin__status.assigned
+                                    span.pure-button.label Assigned
+                        .pure-u-3-5
+                            .tin__info-section
+                                .tin__info-row.tin__time
+                                    span.tin__time-title.row__title Time out 
+                                    span 3:25PM
+                                .tin__info-row.tin__time
+                                    span.tin__time-title.row__title Time in 
+                                    span --
+            if history == "true"
+                .tin__section-title
+                    h3 Tin History
+                .tin__section.-first
+                    .pure-g
+                        .pure-u-2-5
+                            .tin__title-section 
+                                .tin__number 
+                                    span.pure-button.label #11112
+                                .tin__status.returned
+                                    span.pure-button.label Returned
+                        .pure-u-3-5
+                            .tin__info-section
+                                .tin__info-row.tin__time
+                                    span.tin__time-title.row__title Time out 
+                                    span 12:30PM
+                               .tin__info-row.tin__time
+                                   span.tin__time-title.row__title Time in 
+                                   span 3:15PM
 
     script(src="/scripts/main.js")
