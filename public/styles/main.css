@@ -178,6 +178,7 @@ h1, h2, h3, h4, b {
 /******** SCAN PAGES ********/
 
 .scan__page {
+    max-width: 500px;
     margin: 0 auto;
 }
 
