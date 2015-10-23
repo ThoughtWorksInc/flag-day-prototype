@@ -178,7 +178,6 @@ h1, h2, h3, h4, b {
 /******** SCAN PAGES ********/
 
 .scan__page {
-    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -233,6 +232,10 @@ h1, h2, h3, h4, b {
 .time-volunteered-title {
     margin-right: 20px;
     font-weight: 300;
+}
+
+.scan-buttons {
+    padding: 0 15px;
 }
 
 .scan-buttons .pure-button {
